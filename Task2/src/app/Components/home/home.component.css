@@ -1,0 +1,10 @@
+table{
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+tr,th,td{
+    border: 2px solid blueviolet;
+    padding: 10px;
+}

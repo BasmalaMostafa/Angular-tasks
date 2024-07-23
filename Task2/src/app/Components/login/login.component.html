@@ -1,0 +1,32 @@
+
+<div id="myContainer">
+
+    <input [(ngModel)]="name" type="text" placeholder="Name">
+    @if (name==""){
+        
+    }@else if (name.length<3) {
+        <div id="inValid">
+            <p>Invalid name</p>
+        </div>
+    }@else {
+        <div id="Valid">
+            <p>Valid name</p>
+        </div>
+    }
+    <input  [(ngModel)]="age" type="text" placeholder="Age">
+    @if (age==null){
+        
+    }@else if (20<age && age<30) {
+        <div id="Valid">
+            <p>Valid name</p>
+        </div>
+    }@else {
+        <div id="inValid">
+            <p>Invalid name</p>
+        </div>
+    }
+    
+    <button type="button" (click)="login()">Login</button>
+    </div>
+    
+    
